@@ -1,0 +1,9 @@
+a=(1 2 333)
+function b(){
+for j in ${a[@]}
+do
+echo "element $j"
+done
+}
+
+b
