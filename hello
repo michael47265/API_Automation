@@ -1,5 +1,13 @@
 echo "hello"
-a=(1 2 3 4)
-for i in ${a[@]} {
-echo "loop element $i"
+
+a=(1 2 33)
+
+function b() {
+for i in ${a[@]}
+do
+echo "element $i"
+done
 }
+
+b
+
