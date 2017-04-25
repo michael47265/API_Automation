@@ -1,8 +1,5 @@
 package app_testApp.testApp;
 
-//import junit.framework.Assert;
-import junit.framework.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -26,11 +23,6 @@ public class App
 		driver = new ChromeDriver();
 		String url = "http://www.google.com";
 		driver.get(url);
-		driver.findElement(By.id("lst-ib")).sendKeys("2 + 3\n");
-		wait(4000);
-		String result= driver.findElement(By.xpath("//*[@id=\"cwtltblr\"]/div[2]")).getText();
-		System.out.println("result is --------: " + result);
-		Assert.assertEquals("6",result);
 		driver.quit();
 	}
 	
@@ -45,11 +37,4 @@ public class App
 		return "Hello World 2";
 
 	}
-	public static void wait(int delay){
-		try{
-		Thread.sleep(delay);}
-		catch(Exception e){System.out.println(e);
-	}
-	}
-
 }
