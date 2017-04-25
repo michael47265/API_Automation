@@ -30,8 +30,8 @@ public class App
 		wait(4000);
 		String result= driver.findElement(By.xpath("//*[@id=\"cwtltblr\"]/div[2]")).getText();
 		System.out.println("result is --------: " + result);
-		Assert.assertEquals("6",result);
 		driver.quit();
+		Assert.assertEquals("6",result);
 	}
 	
 	public static String getHelloWorld() {
