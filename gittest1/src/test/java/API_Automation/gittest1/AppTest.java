@@ -5,7 +5,8 @@ package API_Automation.gittest1;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//until I put the dependency from below it didn't work
+//http://www.softwaretestinghelp.com/maven-project-setup-for-selenium-selenium-tutorial-24/
 
 import junit.framework.Test;
 import junit.*;
